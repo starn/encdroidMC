@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpclientandroidlib-1.1.1-ade594acb8b338835641f48aea584a28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.4-bd0026394d1a8fc7634a1af5b2248715.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/commons-codec-1.4-57581814f8d817dc964b69c121391720.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jcifs-1.1.11-6b0b244eb666831bfcd058bc3fd6a3d0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpmime-4.0.3-fcf7dd02b26e071306c4cefcf1468470.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/dropbox-android-sdk-1.5.3-557c8c3a790616c7ad819a3c8fe227ad.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-async-http-1.4.3-6df0dfed5d29e8197ba54ab72aa07088.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-d74a6236cb87d9ac83a68e37c0bf72a3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jdom-2.0.4-43abac98d9e57522dd21e08f18eacca4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ftp4j-1.7.2-bbe27858be8fed61c48a8fd1b1714ac9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/json_simple-1.1-4b5d921e2784d3f415ffacfa04821c87.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jsch-0.1.53-26fc8493fa72b70c5050f6536df443a1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/commons-logging-1.1.1-c218bc6f0390b89fdf6ad6104d39702d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

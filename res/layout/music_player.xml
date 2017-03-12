@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget31"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    
+<Button
+android:text="&lt;&lt;"
+android:textSize="15pt"
+android:textStyle="bold"
+android:id="@+id/ButtonPrevious"
+android:layout_width="30pt"
+android:layout_height="wrap_content"/>
+
+
+
+
+<Button
+    android:id="@+id/ButtonNext"
+    android:layout_width="30pt"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/SeekBar01"
+    android:layout_alignParentRight="true"
+    android:text=">>"
+    android:textSize="15pt"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/ButtonPlayStop"
+    android:layout_width="100pt"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/ButtonNext"
+    android:layout_toRightOf="@+id/ButtonPrevious"
+    android:text="Play"
+    android:textSize="15pt"
+    android:textStyle="bold" />
+
+
+<SeekBar
+android:id="@+id/SeekBar01"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_below="@id/ButtonPlayStop"/>
+</RelativeLayout>

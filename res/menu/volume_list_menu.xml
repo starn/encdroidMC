@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/volume_list_menu_create"
+        android:icon="@drawable/ic_menu_newvolume"
+        android:title="@string/menu_create_vol"/>
+    <item
+        android:id="@+id/volume_list_menu_import"
+        android:icon="@drawable/ic_menu_import_volume"
+        android:title="@string/menu_import_vol"/>
+    <item
+        android:id="@+id/volume_list_menu_settings"
+        android:icon="?attr/menuIconPrefs"
+        android:title="@string/menu_settings"/>
+    
+    <item
+        android:id="@+id/volume_list_exit"
+        android:title="@string/exit"/>
+
+</menu>

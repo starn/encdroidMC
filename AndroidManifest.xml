@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.mrpdaemon.android.encdroidmc"
+    android:versionCode="29"
+    android:versionName="2.0.14" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+    <application
+        android:name=".EDApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/LightThemeSelector" >
+        <activity
+            android:name=".EDVolumeListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <data android:scheme="db-XXXXXPUT_YOUR_APP_KEY_HEREXXXXXXXXX" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EDFileChooserActivity" >
+        </activity>
+        <activity android:name=".EDVolumeBrowserActivity" >
+        </activity>
+        <activity android:name=".EDAccountsActivity" >
+        </activity>
+        <activity android:name=".EDPreferenceActivity" >
+        </activity>
+        <activity android:name=".fileProvider.FileProviderActivity" >
+        </activity>
+        <activity android:name=".forceCloseManagement.CrashActivity" >
+        </activity>
+        <activity android:name="uk.co.senab.photoview.ViewPagerActivity" />
+        <activity
+            android:name=".MusicPlayer"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <!-- text editor -->
+        <activity
+            android:name="org.paulmach.textedit.pmTextEdit"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/htm" />
+                <data android:mimeType="text/html" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="org.paulmach.textedit.EditPreferences"
+            android:label="@string/app_name" >
+        </activity>
+        <!--
+        <activity  
+            android:name="org.paulmach.textedit.FileBrowser"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        -->
+
+
+        <!--
+             <receiver
+		    android:name="fr.starn.StartFileSynchronizerAtBootReceiver"
+		    android:label="EncdroidMCSynchronizer">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+        -->
+
+        <receiver
+            android:name="fr.starn.StartFileSynchronizerAtBootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fr.starn.FileSynchronizerAlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        
+        <service android:name="fr.starn.FileSynchronizerService" >
+            <intent-filter>
+                <action android:name="fr.starn.FileSynchronizerService" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- <service android:name="org.mrpdaemon.android.encdroidmc.HttpServerService" ></service> -->
+        <activity
+            android:name=".ConfigSyncActivity"
+            android:label="@string/title_activity_config_sync" >
+        </activity>
+        <activity
+            android:name=".PinCodeActivity"
+            android:label="@string/title_activity_pin_code" >
+        </activity>
+    </application>
+
+</manifest>

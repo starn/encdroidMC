@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/dropbox-android-sdk-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-async-http-1.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/json_simple-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ftp4j-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/httpclientandroidlib-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jsch-0.1.53.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jdom-2.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jcifs-1.1.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/httpmime-4.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

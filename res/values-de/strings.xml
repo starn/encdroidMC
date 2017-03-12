@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encdroid Multi Cloud</string>
+    <string name="file">Datei</string>
+    <string name="volume">Volume</string>
+    <string name="menu_import_vol">Volume importieren</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="no_volumes">Kein EncFS-Volume konfiguriert. Wählen sie \&quot;Volume importieren\&quot; oder \&quot;Volume erstellen\&quot;  aus dem Menü, um ein Volume hinzuzufügen.</string>
+    <string name="menu_select">Wählen</string>
+    <string name="pwd_dialog_title_str">Passwort eingeben:</string>
+    <string name="btn_ok_str">OK</string>
+    <string name="pbkdf_dialog_title_str">Verarbeite Passwortschlüssel</string>
+    <string name="pbkdf_dialog_msg_str">Kann bei einigen Volumes SEHR viel Zeit in Anspruch nehmen. Ziehen sie in Betracht, das Zwischenspeichern des Passwortschlüssels in den Einstellungen zu aktivieren.</string>
+    <string name="btn_cancel_str">Abbrechen</string>
+    <string name="voladd_dialog_title_str">Name des Volumes eingeben:</string>
+    <string name="incorrect_pwd_str">Falsches Passwort eingegeben</string>
+    <string name="toast_cut_file">\'%s\' ausschneiden</string>
+    <string name="toast_copy_file">\'%s\' kopieren</string>
+    <string name="toast_files_exported">Dateien exportiert\&#8230;</string>
+    <string name="toast_files_imported">Dateien importieren\&#8230;</string>
+    <string name="toast_encrypt_file">Datei \'%s\' verschlüsselt</string>
+    <string name="menu_rename">Umbenennen</string>
+    <string name="menu_delete">Löschen</string>
+    <string name="save_pass_invalid_str">Gespeichertes Passwort hat den Prüfsummentest nicht bestanden und wurde verworfen.</string>
+    <string name="save_pass_title_str">Passwörter ableiten</string>
+    <string name="save_pass_sum_str">Das Ergebnis der passwortbasierten Schlüsselableitung zwischenspeichern, um schneller auf Volumes zugreifen zu können.</string>
+    <string name="decrypt_dialog_title_str">Entschlüssele \'%s\'</string>
+    <string name="frename_dialog_title_str">Neuen Dateinamen eingeben:</string>
+    <string name="encrypt_dialog_title_str">Verschlüsselt \'%s\'</string>
+    <string name="menu_import_files">Dateien importieren</string>
+    <string name="import_dialog_title_str">Importiere \'%s\'</string>
+    <string name="btn_yes_str">Ja</string>
+    <string name="btn_no_str">Nein</string>
+    <string name="del_dialog_title_str">Wollen sie \'%s\' wirklich löschen?</string>
+    <string name="menu_newfolder">Neuer Ordner</string>
+    <string name="menu_syncfolder">Lokalen Ordner hier synchronisieren</string>
+    <string name="mkdir_dialog_input_str">Enter folder name:</string>
+    <string name="error_rename_fail">Umbenennen von \'%1$s\' zu \'%2$s\' fehlgeschlagen</string>
+    <string name="error_mkdir_fail">Ordner erstellen fehlgeschlagen \'%s\'</string>
+    <string name="error_delete_fail">Löschen fehlgeschlagen \'%s\'</string>
+    <string name="menu_paste">Einfügen</string>
+    <string name="menu_cut">Auschneiden</string>
+    <string name="error_move_fail">Verschieben von \'%1$s\' nach \'%2$s\' fehlgeschlagen</string>
+    <string name="menu_copy">Kopieren</string>
+    <string name="error_copy_fail">Kopieren von \'%1$s\' nach \'%2$s\' fehlgeschlagen</string>
+    <string name="copy_dialog_title_str">Kopiere Datei(en)</string>
+    <string name="cut_dialog_title_str">Verschiebe Datei(en)</string>
+    <string name="menu_export">Exportieren</string>
+    <string name="menu_export_sd">Auf Gerät exportieren</string>
+    <string name="menu_export_external">Auf externen Speicher exportieren</string>
+    <string name="export_dialog_title_str">Exportiere \'%s\'</string>
+    <string name="error_file_exists">Datei \'%s\' existiert bereits</string>
+    <string name="menu_create_vol">Volume erstellen</string>
+    <string name="menu_choose_folder">Wählen sie einen Ordner</string>
+    <string name="mkvol_dialog_title_str">Volume \'%s\' wird erstellt</string>
+    <string name="delvol_dialog_title_str">Volume \'%s\' wird gelöscht</string>
+    <string name="error_dir_not_found">Verzeichnis \'%s\' nicht gefunden</string>
+    <string name="no_files">Noch keine Dateien vorhanden. Wähle \&quot;Datei importieren\&quot; aus dem Menü, um eine Datei hinzuzufügen.</string>
+    <string name="mkdir_dialog_title_str">Erstelle Verzeichnis \'%s\'</string>
+    <string name="rename_dialog_title_str">Benenne \'%1$s\' zu \'%2$s\' um</string>
+    <string name="delete_dialog_title_str">Lösche \'%s\'</string>
+    <string name="error_no_sd_card">SD-Karte ist nicht verfügbar!</string>
+    <string name="error_sd_readonly">Kann nicht auf die SD-Karte schreiben!</string>
+    <string name="error_path_exists">Pfad \'%s\' existiert bereits!</string>
+    <string name="error_no_viewer_app">Kein Programm zum öffnen von \'%s\' gefunden</string>
+    <string name="menu_lock_volume">Volume sperren</string>
+    <string name="menu_unlock_volume">Volume entsperren</string>
+    <string name="menu_import">Importieren</string>
+    <string name="fs_type_dialog_title_str">Speicherort für Volume auswählen</string>
+    <string name="fs_dialog_local">Lokal</string>
+    <string name="fs_dialog_ext_sd">Externe SD-Karte</string>
+    <string name="menu_refresh">Aktualisieren</string>
+    <string name="dropbox_login_error">Anmeldung an Dropbox-Konto fehlgeschlagen</string>
+    <string name="accounts">Konten</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="account_status">Status:</string>
+    <string name="account_username">Benutzername:</string>
+    <string name="account_linked">Nutzerkonto verbunden mit \'%s\'</string>
+    <string name="account_not_linked">Mit keinem Nutzerkonto verbunden</string>
+    <string name="account_logged_in">Eingeloggt als \'%s\'</string>
+    <string name="account_link_btn_str">Mit einem Konto verbinden</string>
+    <string name="account_unlink_btn_str">Von einem Konto trennen</string>
+    <string name="export_file">Exportiere \'%s\'</string>
+    <string name="settings">Einstellungen</string>
+    <string name="volume_list">Volume Übersicht</string>
+    <string name="loading_contents">Lade Inhalte</string>
+    <string name="unlocking_volume">Entsperre Volume</string>
+    <string name="paste_fail">Einfügen der Datei(en) fehlgeschlagen</string>
+    <string name="delete_vol_dialog_confirm_str">Sind sie sich sicher, das Volume \'%s\' in encdroid view zu löschen?</string>
+    <string name="delete_vol_dialog_disk_str">Lösche vom Datenträger</string>
+    <string name="auto_import_vol_dialog_str">Volume aus \'%s\' importieren?</string>
+    <string name="auto_import_pref_title_str">Volumes automatisch importieren</string>
+    <string name="auto_import_pref_sum_str">Fragen, ein Volume automatisch zu importieren, wenn eine EncFS-Konfigurationsdatei gefunden wurde</string>
+    <string name="ext_sd_enabled_pref_title_str">Externe SD-Karte freigeben</string>
+    <string name="ext_sd_enabled_pref_sum_str">Speichern auf externer SD-Karte erlauben</string>
+    <string name="ext_sd_prefs_title_str">Einstellungen für externe SD-Karte</string>
+    <string name="ext_sd_location_pref_title_str">Speicherort der externen SD-Karte</string>
+    <string name="ext_sd_location_pref_sum_str">Filesystem path of the external SD card</string>
+    <string name="ext_sd_vol_prefix_str">Externe SD-Karte</string>
+    <string name="exit">Exit</string>
+    <string name="save_here">Hier speichern</string>
+    <string name="generate_thumbnails">Vorschaubilder erstellen</string>
+    <string name="import_external_storage">Von externem Datenträger importieren</string>
+    <string name="warranty">Warranty Information: This software is provided AS IS and the author makes NO WARRANTY or representation either express or implied as to its quality, accuracy, or fitness for a particular purpose.</string>
+    <string name="warranty_short">This software is provided AS IS and the author makes NO WARRANTY or representation either express or implied as to its quality, accuracy, or fitness for a particular purpose.</string>
+    <!-- Basic Stuff -->
+    <string name="newFileName">Neue Datei</string>
+    <string name="onSaveMessage">Datei gespeichert.</string>
+    <string name="onListCleared">Verlauf kürzlich geöffneter Dateien gelöscht.</string>
+    <string name="onSuggestionsCleared">Suchverlauf gelöscht.</string>
+    <string name="newFile">Neue Datei</string>
+    <string name="openFile">Datei öffnen</string>
+    <string name="openRecent">Kürzlich geöffnete Dateien öffnen</string>
+    <!-- Search stuff -->
+    <string name="searchLabel">TextEdit</string>
+    <string name="searchHint">Datei suchen</string>
+    <!-- Dialog Texts -->
+    <string name="defaultFilePath">/sdcard/</string>
+    <string name="accessDenied">Datei speichern fehlgeschlagen, Zugriff verweigert!</string>
+    <string name="accessDeniedSDcard">Fehler beim Speichern auf die SD-Karte.\nMögliche Ursachen:\n - Telefon an PC angeschlossen\n - Ungültiger Dateiname\n - SD-Karte nicht eingelegt\n - Kein freier Speicher verfügbar</string>
+    <string name="savingError">Problem beim Speichern.\nMögliche Ursachen:\n - Ungültiger Dateiname\n - Kein freier Speicher verfügbar</string>
+    <string name="shouldSave">Datei geändert. Speichern?</string>
+    <string name="shouldSaveIntent">Sie öffnen eine andere Datei. Diese speichern?</string>
+    <string name="shouldOverwrite">Sie überschreiben eine bestehende Datei.</string>
+    <string name="onSendEmptyMessage">Kann keine leere, unbenannte Datei versenden.</string>
+    <string name="externalModify">Diese Datei wurde extern geändert. Erneut laden?</string>
+    <!--
+         Preference stuff 
+		    If you edit this stuff you need to change updateOptions() to make it match
+    -->
+    <!--
+      	<string name="linewrap">true</string>
+	<string name="autocase">true</string>
+    -->
+    <!-- File Browser stuff -->
+    <string name="nofilesindirectory">Dieses Verzeichnis ist nicht leer.</string>
+    <string name="title_activity_config_sync">ConfigSyncActivity</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="setApplicationPinCode">App PIN Code</string>
+    <string name="setSyncRules">Ordnersynchronisation</string>
+    <string name="title_activity_pin_code">PinCodeActivity</string>
+
+</resources>

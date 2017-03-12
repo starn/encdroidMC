@@ -1,0 +1,126 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+#-injars bin/classes
+#-injars libs
+#-outjars bin/classes-processed.jar
+
+-injars      bin/classes
+-outjars     bin/classes-processed.jar
+-libraryjars "C:/dev/androidSdk/platforms/android-17/android.jar"
+-libraryjars libs
+
+ 
+#-optimizations !code/simplification/arithmetic
+-dontoptimize
+-dontnote
+#-repackageclasses ''
+-allowaccessmodification
+-dontskipnonpubliclibraryclasses
+-ignorewarnings
+-keepattributes *Annotation*,EnclosingMethod
+-keepattributes Signature,RuntimeVisibleAnnotations,AnnotationDefault
+ 
+-dontskipnonpubliclibraryclassmembers
+ 
+#Configuration de base Android:
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+ 
+-keep public class * extends android.view.View {
+ public <init>(android.content.Context);
+ public <init>(android.content.Context, android.util.AttributeSet);
+ public <init>(android.content.Context, android.util.AttributeSet, int);
+ public void set*(...);
+}
+ 
+-keepclasseswithmembers class * {
+ public <init>(android.content.Context, android.util.AttributeSet);
+}
+ 
+-keepclasseswithmembers class * {
+ public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+ 
+-keepclassmembers class * extends android.app.Activity {
+ public void *(android.view.View);
+}
+ 
+-keepclassmembers class * extends android.content.Context {
+ public void *(android.view.View);
+ public void *(android.view.MenuItem);
+}
+ 
+-keepclassmembers class * implements android.os.Parcelable {
+ static android.os.Parcelable$Creator CREATOR;
+}
+ 
+-keepclassmembers class **.R$* {
+ public static <fields>;
+}
+ 
+-keepclassmembers enum * {
+ public static **[] values();
+ public static ** valueOf(java.lang.String);
+}
+ 
+#Pour supprimer les logs lors de la compilation
+-assumenosideeffects class android.util.Log {
+public static int v(...);
+public static int d(...);
+public static int i(...);
+public static int w(...);
+public static int e(...);
+public static int wtf(...);
+}
+
+ 
+#Pour que proguard ignore toutes les classes contenues dans un certain package
+-keep public class  fr.starn.fileProviderModules.** { *; }
+-keep public class  de.aflx.sardine.** { *; }
+-keep class com.jcraft.jsch.jce.*
+-keep class * extends com.jcraft.jsch.KeyExchange
+-keep class com.jcraft.jsch.**
+-keep class com.dropbox.**
+-keep class com.dropbox.client2.**
+-keep class com.dropbox.client2.session.**
+-keep class org.apache.http.**
+-keep interface org.apache.http.**
+
+-keep class * extends com.dropbox.** {
+*;
+}
+
+
+#Pour la librairie Jackson (parsing JSON)
+-keep class org.codehaus.jackson.** { *; }
+-dontwarn org.**
+ 
+ 
+#Pour ActionBarSherlock (d'aprèes le site officiel)
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }

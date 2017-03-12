@@ -1,0 +1,138 @@
+package fr.starn.webdavServer;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.SocketException;
+import java.util.Map;
+
+import org.mrpdaemon.android.encdroidmc.MimeManagement;
+import org.mrpdaemon.sec.encfs.EncFSFile;
+import org.mrpdaemon.sec.encfs.EncFSFileInputStream;
+
+public class RequestHandler implements Runnable{
+	WebdavServerContext ctx;
+	EncFSFile srcFile;
+	File normalFile;
+	
+	public RequestHandler(WebdavServerContext ctx,EncFSFile srcFile, File normalFile){
+		this.ctx=ctx;
+		this.srcFile=srcFile;
+		this.normalFile=normalFile;
+	}
+	
+	@Override
+	public void run() {
+		http_handler(ctx);
+		
+		
+	}
+	
+	   private void http_handler(WebdavServerContext ctx) {
+		   Map<String,String> clientParams;
+		    try {
+		    	
+
+			        if (ctx.getCommand()==null){
+			      	  new HeaderManagement(501,HeaderManagement.contentTypeHTML).construct_http_header(ctx.getOutputFromServer());
+			      	  return;
+			        }
+			        
+					System.out.println("url="+ctx.getURL());
+					
+					String askedPath=ctx.getCommand()[1];
+					System.out.println("chemin fourni:"+ctx.getCommand()[1]);
+					
+			      
+			      if (ctx.getCommand()[0].toUpperCase().startsWith("GET")) { //compare it is it GET
+				      String path = ctx.getCommand()[1]; //fill in the path
+				      //path = URLDecoder.decode(path);
+				      System.out.println("path="+path);
+			    	  
+			    	  //send the file
+				      
+				      long startingByte = 0;
+				      long endingByte = srcFile!=null?srcFile.getLength():normalFile.length();
+				      if (ctx.getClientHttpParams().get("Range")!=null){
+				      //manage range param like: Range=bytes=2276625-
+				    	  String rangeStr=ctx.getClientHttpParams().get("Range");
+				    	  if (rangeStr.indexOf('=')!=-1){
+				    		  String rangeValue=rangeStr.substring(rangeStr.indexOf('=')+1);
+				    		  String[] values = rangeValue.split("-");
+				    		  if (values.length>0){
+				    			  try  {
+				    				  startingByte=Long.parseLong(values[0]);
+				    				  if (values.length>=2) endingByte=Long.parseLong(values[1]);
+				    			  } catch (Exception e){
+				    				  e.printStackTrace();
+				    			  }
+				    		  }
+				    	  }
+				      }
+			    	  
+			    	  
+				      String mimeType = MimeManagement.getMimeType(srcFile!=null?srcFile.getName():normalFile.getName());
+			    	  
+			    	  
+		        	  HeaderManagement header = new HeaderManagement(200,mimeType);
+		        	  header.addProperties("Content-Length", ""+(endingByte-startingByte));
+		        	  header.construct_http_header(ctx.getOutputFromServer());
+		        	  System.out.println("send file ");
+		        	  OutputStream output = ctx.getOutputFromServer();
+		        	  int blockSize = 512*1024;
+		        	  byte buffer[]=new byte[blockSize];
+		        	  int nbLecture;
+		        	  long sizeSent  = 0;
+		        	  InputStream fis = null;
+		        	  try{
+			        	  fis =  srcFile!=null?new EncFSFileInputStream(srcFile):new FileInputStream(normalFile);
+			        	  System.out.println("skip to "+startingByte);
+			        	  fis.skip(startingByte);
+
+			        	  while( (nbLecture = fis.read(buffer)) != -1 ) {
+			        		  try {
+			        			  output.write(buffer, 0, nbLecture);
+			        		  } catch (SocketException se){
+			        			  System.err.println(se.getMessage());
+			        		  }
+			        		  sizeSent+=nbLecture;
+			        		  System.out.println(sizeSent/1000+"kb");
+			        		  output.flush();
+			        		  //Thread.sleep(1000);
+			        	  } 
+			        	  System.out.println("[ok] send file ");
+		        	  } catch (Exception e){
+		        		  System.out.println("[ko] send file ");
+		        		  e.printStackTrace();
+		        	  }	finally {
+		        		  if (fis!=null) fis.close();
+		        	  }
+			    	  
+			    	  
+			    	  
+			      } //if we set it to method 1
+			      
+			      
+			      
+		
+			      else { // not supported
+			        try {
+			        	System.out.println("command "+ctx.getCommand()[0]+" not implemented");
+			        	new HeaderManagement(501,HeaderManagement.contentTypeHTML).construct_http_header(ctx.getOutputFromServer());
+			          return;
+			        }
+			        catch (Exception e3) { //if some error happened catch it
+			          System.err.println("error:" + e3.getMessage());
+			          e3.printStackTrace();
+			        } //and display error
+			      }
+		      
+		    } catch (Exception e){
+		    	e.printStackTrace();
+		    }
+		    
+		    ctx.close();
+		  }	
+
+}

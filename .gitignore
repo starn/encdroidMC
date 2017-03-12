@@ -1,0 +1,10 @@
+.classpath
+.project
+.cproject
+.settings
+bin
+gen
+graphics
+obj
+proguard.cfg
+project.properties

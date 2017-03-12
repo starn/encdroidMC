@@ -1,0 +1,48 @@
+package fr.starn.fileProviderModules;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import net.schmizz.sshj.xfer.InMemorySourceFile;
+
+/**
+ * www.brainliner.jp
+ * 
+ * @author Makoto Takemiya<br />
+ * @version 2012/03/22
+ */
+public class StreamingInMemorySrcFile extends InMemorySourceFile {
+
+   private InputStream is;
+   private String name;
+   private long length;
+
+   /**
+    * @param os
+    */
+   public StreamingInMemorySrcFile(InputStream is, String name, long length) {
+      super();
+      this.is = is;
+      this.name=name;
+      this.length=length;
+    		  
+   }
+
+
+
+	@Override
+	public InputStream getInputStream() throws IOException {
+		return is;
+	}
+
+	@Override
+	public long getLength() {
+		return length;
+	}
+
+	@Override
+	public String getName() {
+		return name;
+	}
+
+}

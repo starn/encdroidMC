@@ -1,0 +1,52 @@
+package org.mrpdaemon.android.encdroidmc.fileProvider;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class EncdroidInputStream {
+	private InputStream is;
+	private EncdroidFileProvider encdroidFileProvider;
+	
+	public EncdroidInputStream(EncdroidFileProvider encdroidFileProvider, InputStream is) {
+		this.is=is;
+		this.encdroidFileProvider=encdroidFileProvider;
+	}
+
+	public int available() throws IOException {
+		return is.available();
+	}
+
+	public void close() throws IOException {
+		is.close();
+	}
+
+	public void mark(int readlimit) {
+		is.mark(readlimit);
+	}
+
+	public boolean markSupported() {
+		return is.markSupported();
+	}
+
+
+	public int read(byte buffer[]) throws IOException {
+		return is.read(buffer);
+	}
+
+	public int read(byte buffer[], int offset, int length) throws IOException {
+		return is.read(buffer,offset,length);
+	}
+
+	public synchronized void reset() throws IOException {
+		is.reset();
+	}
+
+	public long skip(long byteCount) throws IOException {
+		return is.skip(byteCount);
+	}
+	
+	public int read() throws IOException {
+		return is.read();
+	}
+
+}

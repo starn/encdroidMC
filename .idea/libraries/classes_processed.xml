@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="classes-processed">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/classes-processed.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

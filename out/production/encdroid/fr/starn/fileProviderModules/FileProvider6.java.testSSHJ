@@ -1,0 +1,384 @@
+package fr.starn.fileProviderModules;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PipedInputStream;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Properties;
+import java.util.Vector;
+
+import net.schmizz.sshj.SSHClient;
+import net.schmizz.sshj.sftp.FileAttributes;
+import net.schmizz.sshj.sftp.RemoteResourceInfo;
+import net.schmizz.sshj.sftp.SFTPClient;
+import net.schmizz.sshj.xfer.LocalSourceFile;
+
+import org.mrpdaemon.android.encdroidmc.fileProvider.*;
+import org.mrpdaemon.sec.encfs.EncFSFileInfo;
+
+import android.provider.MediaStore.Files;
+
+import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.ChannelSftp.LsEntry;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.Session;
+import com.jcraft.jsch.SftpATTRS;
+import com.jcraft.jsch.SftpException;
+
+
+public class FileProvider6 extends EncdroidFileProvider implements  IStatefullSession,DownloadableWithOutputStream{
+	private final static String hostnameKey = "hostname";
+	private final static String loginKey = "login";
+	private final static String pwdKey = "pwdKey";
+	
+    private String serverAdressFull;
+    
+    String userName;
+    String pwd;
+    
+    SSHClient sshClient;
+    
+	@Override
+	public String getProviderName() {
+		return "SSH / SFTP";
+	}
+	
+
+    public SSHClient getSession(){
+    	try {
+    		if (sshClient!=null && sshClient.isConnected() && sshClient.isAuthenticated()) return sshClient;
+			String serverAdress=serverAdressFull;
+			int port = 22;
+			if (serverAdressFull.contains(":")){
+				int indexOfdots = serverAdressFull.indexOf(":");
+				port = Integer.parseInt(serverAdressFull.substring(indexOfdots+1));
+				serverAdress=serverAdressFull.substring(0,indexOfdots);
+				
+			}
+	    	SSHClient sshClient= new SSHClient();
+	    	
+	
+	    	// only for public key authentication
+	    	sshClient.authPublickey("user", "location to private key file");
+	
+	    	// only for password authentication
+	    	sshClient.authPassword(userName,pwd);
+	    	
+	    	sshClient.connect(serverAdress);
+	    	return sshClient;
+    	} catch (IOException e){
+    		throw new RuntimeException(e);
+    	}
+    }
+	
+	public void initialize(String rootPath) throws Exception {
+		System.out.println("debut init");
+		
+		
+		serverAdressFull=this.getParamValues().get(hostnameKey);
+		
+		userName = this.getParamValues().get(loginKey);
+		pwd = this.getParamValues().get(pwdKey);
+		System.out.println("fin init");
+	}
+
+	
+
+
+
+	@Override
+	public boolean isDirectory(String srcPath) throws IOException {
+		EncFSFileInfo f = getFileInfo(srcPath);
+		return f.isDirectory();
+	}
+
+
+
+	@Override
+	public boolean exists(String srcPath) throws IOException {
+		List< RemoteResourceInfo > ls = null;
+		try {
+			SFTPClient sftp = getSession().newSFTPClient();
+			ls = sftp.ls( srcPath );
+		} catch (IOException e){
+			return false;
+		}
+		return (ls.size()>0) ;
+	}
+
+
+
+	@Override
+	public EncFSFileInfo getFileInfo(String srcPath) throws IOException {
+		if ("/".equals(getAbsolutePath(srcPath))) {
+			//return the root file info
+			return new EncFSFileInfo("/","/",true,0,0,true,true,true);
+		}
+		
+            SSHClient client = getSession();
+		    SFTPClient sftp                  = client.newSFTPClient();
+		    String parentPath = getParentPath(getAbsolutePath(srcPath));
+		    List< RemoteResourceInfo > files = sftp.ls( parentPath );
+		
+		
+		for (RemoteResourceInfo lsEntry: files){
+			if (lsEntry.getName().equals(".") || lsEntry.getName().equals("..")) {
+				continue;
+			}
+			
+			String searchedFullPath = getAbsolutePath(srcPath);
+			if (searchedFullPath.endsWith("/")) searchedFullPath=searchedFullPath.substring(0,searchedFullPath.length()-1);
+			if (searchedFullPath.endsWith("/"+lsEntry.getName())) return remoteResourceInfo2EncFSFileInfo(getParentPath(getAbsolutePath(srcPath)),lsEntry);
+		}
+		return null;
+
+	}
+
+
+
+	@Override
+	public boolean move(String srcPath, String dstPath) throws IOException {
+		try {
+			//getSession().rename(getAbsolutePath(srcPath),getAbsolutePath(dstPath));
+            SSHClient client = getSession();
+		    SFTPClient sftp                  = client.newSFTPClient();
+		    sftp.rename(getAbsolutePath(srcPath),getAbsolutePath(dstPath));
+			return true;
+		} catch (IOException e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+
+
+	@Override
+	public boolean delete(String srcPath) throws IOException {
+		System.out.println("delete "+getAbsolutePath(srcPath));
+		try {
+			EncFSFileInfo file = getFileInfo(srcPath);
+            SSHClient client = getSession();
+		    SFTPClient sftp                  = client.newSFTPClient();
+
+			if (!file.isDirectory()){
+				sftp.rm(getAbsolutePath(srcPath));
+				return true;
+			}
+			else {
+				sftp.rmdir(getAbsolutePath(srcPath));
+				return true;
+			}
+			
+		} catch (IOException e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+
+
+	@Override
+	public boolean mkdir(String dirPath) throws IOException {
+		try {
+            SSHClient client = getSession();
+		    SFTPClient sftp                  = client.newSFTPClient();
+		    sftp.mkdir(getAbsolutePath(dirPath));
+			return true;
+		} catch (IOException e){
+			e.printStackTrace();
+			return false;
+		}		
+	}
+
+
+
+	@Override
+	public boolean mkdirs(String dirPath) throws IOException {
+		try {
+            SSHClient client = getSession();
+		    SFTPClient sftp                  = client.newSFTPClient();
+		    sftp.mkdir(getAbsolutePath(dirPath));
+			return true;
+		} catch (IOException e){
+			e.printStackTrace();
+			return false;
+		}		
+	}
+
+
+
+	@Override
+	public EncFSFileInfo createFile(String dstFilePath) throws IOException {
+		throw new RuntimeException("not implemented");
+	}
+
+
+
+
+	@Override
+	public boolean copy(String srcFilePath, String dstFilePath)
+			throws IOException {
+		throw new RuntimeException("copy not implemented with sftp");
+	}
+	
+	@Override
+	public boolean allowRemoteCopy() {
+		return false;
+	}
+
+
+	@Override
+	public List<EncdroidProviderParameter> getParamsToAsk() {
+		List<EncdroidProviderParameter> params= new ArrayList<EncdroidProviderParameter>();
+		params.add(new EncdroidProviderParameter(hostnameKey,"host ip: ","example: '192.168.1.10' or '192.168.1.10:22'" ));
+		params.add(new EncdroidProviderParameter(loginKey,"login: ","example: myusername."));
+		params.add(new EncdroidProviderParameter(pwdKey,"password: ","example: mypassword.",true ));
+		return params;
+
+	}
+
+	
+	///////////////
+	// IMPORTANT
+	///////////////////
+	//retourner le parent sans le slash et le fichier sans le slash !!
+	//du coup on travaille uniquement, et partout avec le chemin absolu, beaucoup plus simple
+	//////////////////
+	private EncFSFileInfo remoteResourceInfo2EncFSFileInfo(String parentPath, RemoteResourceInfo file){
+		EncFSFileInfo result;
+		try {
+			String name = file.getName();
+
+			FileAttributes attrs = file.getAttributes();
+            long mtime = attrs.getMtime();		
+            boolean isDir = file.isDirectory();
+            long length = attrs.getSize();
+			String relativePath=this.getRelativePathFromAbsolutePath(parentPath);
+            
+			
+			
+			if (name.endsWith("/")) name=name.substring(0,name.length()-1);
+			result = new EncFSFileInfo(name,relativePath,isDir,mtime,length,true,true,true);
+			
+		} catch (Exception e){
+			throw new RuntimeException(e);
+		}
+		
+		return result;
+	}
+
+	protected String getParentPath(String path) {
+		path = path.substring(0, getURLWithoutSlash(path).lastIndexOf('/') + 1);
+		if ("".equals(path)) path="/";
+		return path;
+	}
+	
+	protected String getURLWithoutSlash(String url) {
+		if (url == null)
+			return null;
+		if (url.endsWith("/"))
+			return url.substring(0, url.length() - 1);
+		return url;
+	}	
+
+
+	@Override
+	public List<EncFSFileInfo> fsList(String path) throws IOException {
+		System.out.println("*** fsList "+path+" => "+getAbsolutePath(path));
+		String pathToList = getAbsolutePath(path);
+		List<RemoteResourceInfo> files = null;
+		try {
+			SFTPClient sftp = getSession().newSFTPClient();
+			files = sftp.ls(pathToList);
+		} catch (IOException e){
+			System.err.println(e.getMessage());
+			return new LinkedList<EncFSFileInfo>(); 
+		} catch (RuntimeException e){
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+		
+        List<EncFSFileInfo> fList = new LinkedList<EncFSFileInfo>();
+        for (RemoteResourceInfo lsEntry: files){
+        	if (lsEntry.getName().equals(".") || lsEntry.getName().equals("..")) continue;
+        	fList.add(remoteResourceInfo2EncFSFileInfo(pathToList,lsEntry));
+        }
+ 
+        return fList;
+	}
+	
+
+
+
+
+	@Override
+	public void fsUpload(String path, PipedInputStream inputStream, long length)
+			throws IOException {
+
+		System.out.println("upload file "+path);
+		try {
+			SFTPClient sftp = getSession().newSFTPClient();
+			sftp.put( new StreamingInMemorySrcFile(inputStream,path,length),getAbsolutePath(path));
+		} catch (IOException e){
+			e.printStackTrace();
+		}
+	}
+
+
+	@Override
+	public InputStream fsDownload(String path, long startIndex) throws IOException {
+
+		throw new RuntimeException("not implemented: use 'public void fsDownload(String path, OutputStream outputStream)' instead.");
+	}
+
+	@Override
+	public void fsDownload(String path, OutputStream outputStream, long startIndex) {
+		System.out.println("download file "+path);
+		try {
+			SFTPClient sftp = getSession().newSFTPClient();
+			BufferedOutputStream bos = new BufferedOutputStream(outputStream);
+			sftp.get(path, new StreamingInMemoryDestFile(bos));
+		} catch (IOException e){
+			e.printStackTrace();
+		}
+	}
+
+
+
+
+
+	@Override
+	protected String getUrlPrefix() {
+		return "";
+	}
+
+
+	@Override
+	public void clearSession() {
+		
+
+		
+	}
+
+	@Override
+	public int getID() {
+		return 6;
+	}
+	
+	@Override
+	public String getFilesystemRootPath() {
+		return "/";
+	}
+
+
+
+}

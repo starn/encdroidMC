@@ -189,6 +189,10 @@ public class EDVolumeListActivity extends ListActivity {
 				Intent showChangeLog = new Intent(this, pmTextEdit.class);
 				StringBuffer changeLogTxt = new StringBuffer();
 				changeLogTxt.append("ChangeLog:\n\n");
+				changeLogTxt.append("2.0.15\n");
+				changeLogTxt.append("- fix error when creating a new volume (sorry for this regression)\n");
+				changeLogTxt.append("- add project to github: https://github.com/starn/encdroidMC\n");
+				changeLogTxt.append("\n");
 				changeLogTxt.append("2.0.14\n");
 				changeLogTxt.append("- Add german translation (thanks to Thomas R. for this translation !)\n");
 				changeLogTxt.append("\n");
@@ -961,7 +965,7 @@ public class EDVolumeListActivity extends ListActivity {
 		//Bundle fileChooserParams = new Bundle();
 		startFileChooser.putExtra(EDFileChooserActivity.PARAM_KEY_MODE, mode);
 		startFileChooser.putExtra(EDFileChooserActivity.PARAM_KEY_PROVIDER, fileProvider);
-		//starn: on peut arriver ici lorsqu'on créé un nouveau voume apres avoir selectionné le providerType
+		//starn: on peut arriver ici lorsqu'on crï¿½ï¿½ un nouveau voume apres avoir selectionnï¿½ le providerType
 		//startFileChooser.putExtras(fileChooserParams);
 		startActivityForResult(startFileChooser, EDFileChooserActivity.REQUEST_CODE);
 	}
@@ -1326,8 +1330,12 @@ public class EDVolumeListActivity extends ListActivity {
 		protected void onPostExecute(Boolean result) {
 			super.onPostExecute(result);
 
-			if (myDialog.isShowing()) {
+			if (myDialog != null && myDialog.isShowing()) {
 				myDialog.dismiss();
+			}
+
+			if (mProgDialog != null && mProgDialog.isShowing()){
+				mProgDialog.dismiss();
 			}
 
 			if (!isCancelled()) {
@@ -1392,7 +1400,7 @@ public class EDVolumeListActivity extends ListActivity {
 		protected void onPostExecute(Boolean result) {
 			super.onPostExecute(result);
 
-			if (myDialog.isShowing()) {
+			if (myDialog != null && myDialog.isShowing()) {
 				myDialog.dismiss();
 			}
 

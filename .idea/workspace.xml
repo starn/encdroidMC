@@ -1,10 +1,410 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0875ae46-db40-481b-878a-1af36d81c075" name="Default" comment="" />
+    <list default="true" id="0875ae46-db40-481b-878a-1af36d81c075" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/DavResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/Sardine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/SardineFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/Version.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/SardineException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/SardineImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/SardineImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/ExistsResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/LockResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/MultiStatusResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/ValidatingResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/VoidResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/handler/XmlMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/io/ConsumingInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpCopy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpLock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpMkCol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpMove.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpPropFind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpPropPatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/impl/methods/HttpUnlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Activelock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Allprop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Collection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Creationdate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Displayname.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Error.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Exclusive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Getcontentlanguage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Getcontentlength.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Getcontenttype.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Getetag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Getlastmodified.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Keepalive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Link.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Lockdiscovery.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Lockentry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Lockinfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Lockscope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Locktoken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Locktype.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Multistatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Omit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Owner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Prop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Propertybehavior.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Propertyupdate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Propfind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Propname.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Propstat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Remove.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Resourcetype.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Set.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Shared.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Source.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Supportedlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/model/Write.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/QName$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/QName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/de/aflx/sardine/util/SardineUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/FileSynchronizerAlarmReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/FileSynchronizerRule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/FileSynchronizerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/Password.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/PersistantInstanceManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/StartFileSynchronizerAtBootReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/ThumbnailManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/FileProvider7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/fileProviderModules/X509AlwaysTrust.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/HeaderManagement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/HttpServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/KeyValueBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/RequestHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/WebdavServerContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/fr/starn/webdavServer/XMLHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/CDL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/Cookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/CookieList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/HTTP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/HTTPTokener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONML.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONObject$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONObject$Null.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONString.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONStringer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONTokener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/JSONWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/Kim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/Property.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/XML.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/XMLTokener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/BitInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/BitOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/BitReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/BitWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/Compressor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/Decompressor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/Huff$Symbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/Huff.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/JSONzip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/Keep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/MapKeep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/None.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/PostMortem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/TrieKeep$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/json/zip/TrieKeep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/CallUrlThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/ConfigSyncActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/ConfigSyncActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDAccountsActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDAccountsActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDActionBar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDApplication$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDAsyncTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDDBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity$EDFileChooserFillTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserAdapter$CheckboxChangeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDFileChooserItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDNativePBKDF2Provider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDPreferenceActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDPreferenceActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDPreferenceActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDProgressListener$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDProgressListener$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDProgressListener$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDProgressListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolume.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity$ActivityRestoreContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeBrowserActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$ActivityRestoreContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$CreateVolumeTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$DeleteVolumeTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$UnlockVolumeTask$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity$UnlockVolumeTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/EDVolumeListAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MimeManagement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MusicPlayer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MusicPlayer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MusicPlayer$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MusicPlayer$Play.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/MusicPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/PinCodeActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/PinCodeActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/PinCodeActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/PinCodeActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/StaticConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/ThreadErrorHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/ActivityRestoreTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/AsyncTasksUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/EDFileObserver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/ExportFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/FillTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/ImportFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/MetadataOpTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/NotificationHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/PasteFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/SaveFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/SaveFromFSFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/ThumbnailsTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/UnlockVolumeTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/asyncTasks/ViewFileTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/DownloadableWithOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/EncdroidFileProvider$DownloadStreamThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/EncdroidFileProvider$StreamThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/EncdroidFileProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/EncdroidProviderParameter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/FileProviderActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/FileProviderActivity$ClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/FileProviderActivity$linkFileProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/FileProviderActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/IStatefullSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/Linkable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/fileProvider/UploadableWithOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/forceCloseManagement/CrashActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/tools/KeyValueBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/android/encdroidmc/tools/SecureDeleteThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/BasicFilenameDecryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/BasicFilenameEncryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/BlockCrypto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/BlockFilenameDecryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/BlockFilenameEncryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSBase64$InputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSBase64$OutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSBase64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSChecksumException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSConfigFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSConfigParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSConfigWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSCorruptDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSCrypto$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSCrypto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFileInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFileInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFileOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFileProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSFilenameEncryptionAlgorithm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSInvalidConfigException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSInvalidPasswordException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSLocalFileProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSPBKDF2Provider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSProgressListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSUnsupportedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolume$PathOperation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolume.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolumeBuilder$ConfigBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolumeBuilder$FileProviderBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolumeBuilder$PasswordBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolumeBuilder$Pbkdf2ProviderBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/EncFSVolumeBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/FilenameDecryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/FilenameEncryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/NullFilenameDecryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/NullFilenameEncryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/StreamCrypto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/StreamFilenameDecryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/StreamFilenameEncryptionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/mrpdaemon/sec/encfs/VolumeKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ClearRecentFileListPreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ClearSearchSuggestions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ColorPreference$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ColorPreference$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ColorPreference$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/ColorPreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/DefaultDirPreference$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/DefaultDirPreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/EditPreferences.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileAutoCompleteArrayAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileBrowser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FileViewArrayAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontSizePreference$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontSizePreference$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontSizePreference$FontTypeArrayAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontSizePreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontTypePreference$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontTypePreference$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontTypePreference$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontTypePreference$FontTypeArrayAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/FontTypePreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/SearchSuggestions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/WarrantyPreference$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/WarrantyPreference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/paulmach/textedit/pmTextEdit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/slf4j/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/slf4j/LoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/org/slf4j/LoggerImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/Compat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/HackyViewPager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/IPhotoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoView$UiUpdate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$FlingRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/PhotoViewAttacher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/SDK16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/SamplePagerAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/ScrollerProxy$GingerScroller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/ScrollerProxy$PreGingerScroller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/ScrollerProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector$CupcakeDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector$EclairDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector$FroyoDetector$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector$FroyoDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector$OnGestureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/VersionedGestureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/encdroid/uk/co/senab/photoview/ViewPagerActivity.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/encdroid/encdroid.apk" afterPath="$PROJECT_DIR$/out/production/encdroid/encdroid.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/encdroid/encdroid.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/encdroid/encdroid.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java" afterPath="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.java" afterPath="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +419,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VersionedGestureDetector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VersionedGestureDetector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uk/co/senab/photoview/VersionedGestureDetector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
@@ -29,7 +429,90 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EDVolumeListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="274" column="76" lean-forward="true" selection-start-line="274" selection-start-column="76" selection-end-line="274" selection-end-column="76" />
+              <folding>
+                <element signature="e#37198#37240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Looper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../androidSdk/sources/android-23/android/os/Looper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrashActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/CrashActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-fr/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.is</find>
+      <find>myDialog</find>
+      <find>.15</find>
+      <find>key</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -40,6 +523,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/uk/co/senab/photoview/VersionedGestureDetector.java" />
+        <option value="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -71,55 +558,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
+              <option name="myItemId" value="encdroidMC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encdroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="encdroidMC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +584,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="device.picker.selection" value="Nexus_5X_API_23" />
+    <property name="device.picker.selection" value="LGH85036f91eca" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Android App.encdroid">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -448,6 +904,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -519,7 +982,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="Nexus_4_API_23" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
@@ -559,11 +1022,12 @@
       <updated>1487881412719</updated>
       <workItem from="1487881416419" duration="2318000" />
       <workItem from="1489175466723" duration="349000" />
+      <workItem from="1498417133030" duration="1764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2667000" />
+    <option name="totallyTimeSpent" value="4431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,41 +1040,41 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46516612" sideWeight="0.67803836" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978564" sideWeight="0.48933902" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18390192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18390192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +1084,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java</url>
+          <line>1402</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java</url>
+          <line>1336</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -638,8 +1118,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/co/senab/photoview/VersionedGestureDetector.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-fr/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/co/senab/photoview/VersionedGestureDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="119" column="30" lean-forward="false" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/CrashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../androidSdk/sources/android-23/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/forceCloseManagement/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mrpdaemon/android/encdroidmc/EDVolumeListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="274" column="76" lean-forward="true" selection-start-line="274" selection-start-column="76" selection-end-line="274" selection-end-column="76" />
+          <folding>
+            <element signature="e#37198#37240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
